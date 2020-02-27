@@ -4,7 +4,7 @@ import cherrypy
 class MainViews(object):
     @cherrypy.expose
     def index(self):
-        return "Hello dyploma!\n"
+        return "Hello Candidate!\n"
 
     @cherrypy.expose
     def selftest(self):
@@ -15,7 +15,7 @@ class MainViews(object):
         output = [
             "# HELP this is only a demo metric",
             "# TYPE demo_metric gauge",
-            """demo_metric{dc="ob-chidc2"} 2.922224e+06"""
+            """demo_metric{dc="chidc2"} 2.922224e+06"""
         ]
         return "\n".join(output)
 
