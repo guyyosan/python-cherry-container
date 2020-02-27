@@ -1,8 +1,8 @@
 build:  ## Build docker image
-	docker build -t dyploma-demo .
+	docker build -t demo .
 
 run:  ## Run project inside docker container
-	docker run -it --entrypoint=python -p 8080:8080 dyploma-demo src/main.py
+	docker run -it --entrypoint=python -p 8080:8080 demo src/main.py
 
 check:  ## Do some requests to exposed endpoints
 	@echo "Request homepage"
